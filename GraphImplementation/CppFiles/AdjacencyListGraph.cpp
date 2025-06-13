@@ -31,7 +31,7 @@ namespace GraphNamespace {
     bool AdjacencyListGraph::hasEdge(int edgeId) const {
         return this->adjacencyListContainerManager.hasEdge(edgeId);
     }
-    EdgeIdList AdjacencyListGraph::getEdgesFromTo(
+    const EdgeIdList& AdjacencyListGraph::getEdgesFromTo(
         int sourceVertexId,
         int destinationVertexId
     ) const {
@@ -39,10 +39,11 @@ namespace GraphNamespace {
             sourceVertexId, destinationVertexId
         );
     }
-    VertexList AdjacencyListGraph::getAdjacentVertices(int vertexId) const {
+    const VertexList&
+    AdjacencyListGraph::getAdjacentVertices(int vertexId) const {
         return this->adjacencyListContainerManager.getAdjacentVertices(vertexId);
     }
-    EdgeIdList AdjacencyListGraph::getIncidentEdges(int vertexId) const {
+    const EdgeIdList& AdjacencyListGraph::getIncidentEdges(int vertexId) const {
         return this->adjacencyListContainerManager.getIncidentEdges(vertexId);
     }
 

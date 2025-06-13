@@ -43,17 +43,17 @@ namespace GraphNamespace {
     bool AdjacencyListContainerManager::hasEdge(int edgeId) const {
         throw 0;
     }
-    EdgeIdList AdjacencyListContainerManager::getEdgesFromTo(
+    const EdgeIdList& AdjacencyListContainerManager::getEdgesFromTo(
         int sourceVertexId,
         int destinationVertexId
     ) const {
         throw 0;
     }
-    VertexList
+    const VertexList&
     AdjacencyListContainerManager::getAdjacentVertices(int vertexId) const {
         return this->adjacencyListContainer[vertexId];
     }
-    EdgeIdList
+    const EdgeIdList&
     AdjacencyListContainerManager::getIncidentEdges(int vertexId) const {
         throw 0;
     }

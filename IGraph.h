@@ -9,10 +9,10 @@ namespace GraphNamespace {
         virtual int getEdgesCount() const = 0;
         virtual bool hasVertex(int vertexId) const = 0;
         virtual bool hasEdge(int edgeId) const = 0;
-        virtual EdgeIdList
+        virtual const EdgeIdList&
         getEdgesFromTo(int sourceVertexId, int destinationVertexId) const = 0;
-        virtual VertexList getAdjacentVertices(int vertexId) const = 0;
-        virtual EdgeIdList getIncidentEdges(int vertexId) const = 0;
+        virtual const VertexList& getAdjacentVertices(int vertexId) const = 0;
+        virtual const EdgeIdList& getIncidentEdges(int vertexId) const = 0;
 
         virtual bool addVertex(int vertexId) = 0;
         virtual bool removeVertex(int vertexId) = 0;

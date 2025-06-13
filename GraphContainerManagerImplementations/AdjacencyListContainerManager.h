@@ -22,12 +22,13 @@ namespace GraphNamespace {
         virtual int getEdgesCount() const override;
         virtual bool hasVertex(int vertexId) const override;
         virtual bool hasEdge(int edgeId) const override;
-        virtual EdgeIdList getEdgesFromTo(
+        virtual const EdgeIdList& getEdgesFromTo(
             int sourceVertexId,
             int destinationVertexId
         ) const override;
-        virtual VertexList getAdjacentVertices(int vertexId) const override;
-        virtual EdgeIdList getIncidentEdges(int vertexId) const override;
+        virtual const VertexList&
+        getAdjacentVertices(int vertexId) const override;
+        virtual const EdgeIdList& getIncidentEdges(int vertexId) const override;
 
         virtual bool addVertex(int vertexId) override;
         virtual bool removeVertex(int vertexId) override;
