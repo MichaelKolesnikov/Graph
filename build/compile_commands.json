@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/user_name/VSCodeProjects/Graph/build",
+  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/main.cpp.o -c /home/user_name/VSCodeProjects/Graph/main.cpp",
+  "file": "/home/user_name/VSCodeProjects/Graph/main.cpp"
+},
+{
+  "directory": "/home/user_name/VSCodeProjects/Graph/build",
+  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp.o -c /home/user_name/VSCodeProjects/Graph/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp",
+  "file": "/home/user_name/VSCodeProjects/Graph/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp"
+},
+{
+  "directory": "/home/user_name/VSCodeProjects/Graph/build",
+  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o -c /home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/AdjacencyListGraph.cpp",
+  "file": "/home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/AdjacencyListGraph.cpp"
+}
+]
