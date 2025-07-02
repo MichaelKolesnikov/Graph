@@ -11,7 +11,7 @@
 },
 {
   "directory": "/home/user_name/VSCodeProjects/Graph/build",
-  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o -c /home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/AdjacencyListGraph.cpp",
-  "file": "/home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/AdjacencyListGraph.cpp"
+  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/GraphImplementation/CppFiles/Graph.cpp.o -c /home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/Graph.cpp",
+  "file": "/home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/Graph.cpp"
 }
 ]

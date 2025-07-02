@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(main
     main.cpp
     GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp
-    GraphImplementation/CppFiles/AdjacencyListGraph.cpp
+    GraphImplementation/CppFiles/Graph.cpp
 )
 
 target_include_directories(main PRIVATE

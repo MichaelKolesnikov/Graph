@@ -124,7 +124,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "GraphImplementation/CppFiles/AdjacencyListGraph.cpp",
+			"path" : "GraphImplementation/CppFiles/Graph.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

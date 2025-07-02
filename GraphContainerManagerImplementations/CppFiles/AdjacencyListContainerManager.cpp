@@ -35,25 +35,33 @@ namespace GraphNamespace {
     int AdjacencyListContainerManager::getEdgesCount() const {
         return this->edgesCount;
     };
+    VertexList AdjacencyListContainerManager::getVertices() const {
+        auto vertexList = VertexList(this->getVerticesCount());
+        for (int i = 0, j = 0; i < this->adjacencyListContainer.size(); ++i) {
+            if (!this->removedVertices.contains(i)) {
+                vertexList[j++] = i;
+            }
+        }
+        return vertexList;
+    }
     bool AdjacencyListContainerManager::hasVertex(int vertexId) const {
         return vertexId < this->adjacencyListContainer.size() &&
-            this->removedVertices.find(vertexId) ==
-            std::end(this->removedVertices);
+            !this->removedVertices.contains(vertexId);
     }
     bool AdjacencyListContainerManager::hasEdge(int edgeId) const {
         throw 0;
     }
-    const EdgeIdList& AdjacencyListContainerManager::getEdgesFromTo(
+    EdgeIdList AdjacencyListContainerManager::getEdgesFromTo(
         int sourceVertexId,
         int destinationVertexId
     ) const {
         throw 0;
     }
-    const VertexList&
+    VertexList
     AdjacencyListContainerManager::getAdjacentVertices(int vertexId) const {
         return this->adjacencyListContainer[vertexId];
     }
-    const EdgeIdList&
+    EdgeIdList
     AdjacencyListContainerManager::getIncidentEdges(int vertexId) const {
         throw 0;
     }
@@ -80,11 +88,17 @@ namespace GraphNamespace {
     }
     int AdjacencyListContainerManager::addEdgeAndGetItsIdOrResultStatus(
         int sourceVertexId,
-        int destinationVertexId
+        int destinationVertexId,
+        bool createVertexIfNotExists = false
     ) {
-        if (!this->hasVertex(sourceVertexId) ||
-            !this->hasVertex(destinationVertexId)) {
-            return -1;
+        if (createVertexIfNotExists) {
+            this->addVertex(sourceVertexId);
+            this->addVertex(destinationVertexId);
+        } else {
+            if (!this->hasVertex(sourceVertexId) ||
+                !this->hasVertex(destinationVertexId)) {
+                return -1;
+            }
         }
         this->adjacencyListContainer[sourceVertexId].push_back(
             destinationVertexId
@@ -110,4 +124,7 @@ namespace GraphNamespace {
         this->adjacencyListContainer.clear();
     }
 
+    IGraphContainerManager* AdjacencyListContainerManager::clone() const {
+        return new AdjacencyListContainerManager(this->adjacencyListContainer);
+    }
 }; // namespace GraphNamespace

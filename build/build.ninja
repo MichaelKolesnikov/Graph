@@ -63,8 +63,8 @@ build CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles/Adjacenc
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles
 
-build CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o: CXX_COMPILER__main_Debug /home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/AdjacencyListGraph.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o.d
+build CMakeFiles/main.dir/GraphImplementation/CppFiles/Graph.cpp.o: CXX_COMPILER__main_Debug /home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/Graph.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/GraphImplementation/CppFiles/Graph.cpp.o.d
   FLAGS = -g -std=gnu++23
   INCLUDES = -I/home/user_name/VSCodeProjects/Graph
   OBJECT_DIR = CMakeFiles/main.dir
@@ -78,7 +78,7 @@ build CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o:
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp.o CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp.o CMakeFiles/main.dir/GraphImplementation/CppFiles/Graph.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :

@@ -20,21 +20,22 @@ namespace GraphNamespace {
         getAdjacencyListContainer() const override;
         virtual int getVerticesCount() const override;
         virtual int getEdgesCount() const override;
+        virtual VertexList getVertices() const override;
         virtual bool hasVertex(int vertexId) const override;
         virtual bool hasEdge(int edgeId) const override;
-        virtual const EdgeIdList& getEdgesFromTo(
+        virtual EdgeIdList getEdgesFromTo(
             int sourceVertexId,
             int destinationVertexId
         ) const override;
-        virtual const VertexList&
-        getAdjacentVertices(int vertexId) const override;
-        virtual const EdgeIdList& getIncidentEdges(int vertexId) const override;
+        virtual VertexList getAdjacentVertices(int vertexId) const override;
+        virtual EdgeIdList getIncidentEdges(int vertexId) const override;
 
         virtual bool addVertex(int vertexId) override;
         virtual bool removeVertex(int vertexId) override;
         virtual int addEdgeAndGetItsIdOrResultStatus(
             int sourceVertexId,
-            int destinationVertexId
+            int destinationVertexId,
+            bool createVertexIfNotExists
         ) override;
         virtual bool removeAllEdgesFromTo(
             int sourceVertexId,
@@ -42,5 +43,6 @@ namespace GraphNamespace {
         ) override;
         virtual bool removeEdge(int edgeId) override;
         virtual void clear() override;
+        virtual IGraphContainerManager* clone() const override;
     };
 } // namespace GraphNamespace
