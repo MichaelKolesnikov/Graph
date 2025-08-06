@@ -1,3 +1,4 @@
-/home/user_name/VSCodeProjects/Graph/build/CMakeFiles/main.dir
-/home/user_name/VSCodeProjects/Graph/build/CMakeFiles/edit_cache.dir
-/home/user_name/VSCodeProjects/Graph/build/CMakeFiles/rebuild_cache.dir
+/home/username/QtProjects/Graph/build/CMakeFiles/Graph.dir
+/home/username/QtProjects/Graph/build/CMakeFiles/GraphExecutable.dir
+/home/username/QtProjects/Graph/build/CMakeFiles/edit_cache.dir
+/home/username/QtProjects/Graph/build/CMakeFiles/rebuild_cache.dir

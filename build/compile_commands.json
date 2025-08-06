@@ -1,17 +1,20 @@
 [
 {
-  "directory": "/home/user_name/VSCodeProjects/Graph/build",
-  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/main.cpp.o -c /home/user_name/VSCodeProjects/Graph/main.cpp",
-  "file": "/home/user_name/VSCodeProjects/Graph/main.cpp"
+  "directory": "/home/username/QtProjects/Graph/build",
+  "command": "/usr/bin/g++ -DGraph_EXPORTS -I/home/username/QtProjects/Graph/include -g -std=gnu++23 -fPIC -o CMakeFiles/Graph.dir/src/Graph/Graph/Graph.cpp.o -c /home/username/QtProjects/Graph/src/Graph/Graph/Graph.cpp",
+  "file": "/home/username/QtProjects/Graph/src/Graph/Graph/Graph.cpp",
+  "output": "CMakeFiles/Graph.dir/src/Graph/Graph/Graph.cpp.o"
 },
 {
-  "directory": "/home/user_name/VSCodeProjects/Graph/build",
-  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp.o -c /home/user_name/VSCodeProjects/Graph/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp",
-  "file": "/home/user_name/VSCodeProjects/Graph/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp"
+  "directory": "/home/username/QtProjects/Graph/build",
+  "command": "/usr/bin/g++ -DGraph_EXPORTS -I/home/username/QtProjects/Graph/include -g -std=gnu++23 -fPIC -o CMakeFiles/Graph.dir/src/Graph/GraphContainerManager/AdjacencyListContainerManager.cpp.o -c /home/username/QtProjects/Graph/src/Graph/GraphContainerManager/AdjacencyListContainerManager.cpp",
+  "file": "/home/username/QtProjects/Graph/src/Graph/GraphContainerManager/AdjacencyListContainerManager.cpp",
+  "output": "CMakeFiles/Graph.dir/src/Graph/GraphContainerManager/AdjacencyListContainerManager.cpp.o"
 },
 {
-  "directory": "/home/user_name/VSCodeProjects/Graph/build",
-  "command": "/usr/bin/g++ -I/home/user_name/VSCodeProjects/Graph -g -std=gnu++23 -o CMakeFiles/main.dir/GraphImplementation/CppFiles/Graph.cpp.o -c /home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/Graph.cpp",
-  "file": "/home/user_name/VSCodeProjects/Graph/GraphImplementation/CppFiles/Graph.cpp"
+  "directory": "/home/username/QtProjects/Graph/build",
+  "command": "/usr/bin/g++  -I/home/username/QtProjects/Graph/include -g -std=gnu++23 -o CMakeFiles/GraphExecutable.dir/main.cpp.o -c /home/username/QtProjects/Graph/main.cpp",
+  "file": "/home/username/QtProjects/Graph/main.cpp",
+  "output": "CMakeFiles/GraphExecutable.dir/main.cpp.o"
 }
 ]

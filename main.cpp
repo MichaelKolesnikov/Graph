@@ -1,5 +1,5 @@
-#include "GraphContainerManagerImplementations/AdjacencyListContainerManager.h"
-#include "GraphImplementation/Graph.h"
+#include <Graph/Graph/Graph.h>
+#include <Graph/GraphContainerManager/AdjacencyListContainerManager.h>
 #include <iostream>
 #include <stack>
 using namespace std;

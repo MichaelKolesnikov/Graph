@@ -1,6 +1,0 @@
-# ninja log v5
-0	586	1749916964308144638	CMakeFiles/main.dir/main.cpp.o	3c352fd6f073d685
-1	702	1749916825942429232	CMakeFiles/main.dir/GraphContainerManagerImplementations/CppFiles/AdjacencyListContainerManager.cpp.o	376b6f8ce86554d9
-400	480	1750410148584500546	main	553be550f092a4e9
-0	663	1749838703808574805	CMakeFiles/main.dir/GraphImplementation/CppFiles/AdjacencyListGraph.cpp.o	e49e53c7fe556cd
-1	400	1750410148504498849	CMakeFiles/main.dir/GraphImplementation/CppFiles/Graph.cpp.o	8fab209a5ec7b338

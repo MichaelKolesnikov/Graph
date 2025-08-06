@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/GraphExecutable.dir/main.cpp.o -o GraphExecutable  -Wl,-rpath,/home/username/QtProjects/Graph/build libGraph.so 

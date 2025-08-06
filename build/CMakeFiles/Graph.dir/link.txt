@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libGraph.so -o libGraph.so CMakeFiles/Graph.dir/src/Graph/Graph/Graph.cpp.o CMakeFiles/Graph.dir/src/Graph/GraphContainerManager/AdjacencyListContainerManager.cpp.o 
